@@ -8,9 +8,22 @@
     "dev": "nuxt"
   },
   "author": "AcheZeta",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "nuxt": "^2.9.2"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AcheZeta/VueNuxt.git"
+  },
+  "keywords": [
+    "nuxt",
+    "vue",
+    "achezeta"
+  ],
+  "bugs": {
+    "url": "https://github.com/AcheZeta/VueNuxt/issues"
+  },
+  "homepage": "https://github.com/AcheZeta/VueNuxt#readme"
 }
