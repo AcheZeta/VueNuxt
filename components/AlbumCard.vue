@@ -1,5 +1,5 @@
 <template lang="html">
-    <div>
+    <div class="card">
         <h3>
             {{ album.title }}
         </h3>
