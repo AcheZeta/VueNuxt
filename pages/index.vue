@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <h1 class="title">Albums de la página</h1>
-    <div class="card is-multiline">
+    <div class="columns is-multiline">
       <AlbumCard :album="album" v-for="album in albums" :key="album.title" />
     </div>
   </div>
