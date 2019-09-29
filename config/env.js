@@ -1,3 +1,3 @@
 export default {
-    endopoint: 'https://jsonplaceholder.typicode.com'
+    endpoint: 'https://jsonplaceholder.typicode.com'
 }

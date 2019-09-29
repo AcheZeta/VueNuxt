@@ -23,7 +23,7 @@ export default {
     };
   },
   created() {
-    axios.get(`${env.endopoint}/albums`).then(response => {
+    axios.get(`${env.endpoint}/albums`).then(response => {
       this.albums = response.data;
     });
   }
