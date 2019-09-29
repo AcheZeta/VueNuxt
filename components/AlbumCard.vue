@@ -4,7 +4,7 @@
           <h3>
               {{ album.title }}
           </h3>
-          <a href="#">Ver album</a>
+          <a class="button" href="#">Ver album</a>
       </div>
   </div>
 </template>
