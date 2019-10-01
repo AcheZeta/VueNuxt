@@ -1,5 +1,8 @@
 <template lang="html">
   <div class="container">
+  <header>
+    <nuxt-link to="/">REGRESAR</nuxt-link>
+  </header>
     <h1 class="title">{{album.title}}</h1>
     <div class="columns is-multiline">
       <div class="column is-one-quarter" v-for="photo in photos" :key="photo.id">
@@ -32,10 +35,17 @@ export default {
       .get(`${env.endpoint}/albums/${this.$route.params.id}/photos`)
       .then(photo => {
         this.photos = photo.data;
-      })
+      });
   }
 };
 </script>
 
 <style scoped>
+.container {
+  text-align: center;
+}
+header {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
 </style>
