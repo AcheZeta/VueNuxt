@@ -4,7 +4,7 @@
       <h3>
       {{ album.title }}
       </h3>
-      <nuxt-link :to="`/albums/${album.id}`" class="button is-primary"></nuxt-link>
+      <nuxt-link :to="`/albums/${album.id}`" class="button is-primary">Ver Albúm</nuxt-link>
       <!-- <a class="button is-primary" href="#">Ver album</a> -->
     </div>
   </div>
