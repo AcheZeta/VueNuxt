@@ -1,11 +1,12 @@
 <template lang="html">
  <div class="column is-one-quarter">
-  <div class="box">
-          <h3>
-              {{ album.title }}
-          </h3>
-          <a class="button" href="#">Ver album</a>
-      </div>
+    <div class="box">
+      <h3>
+      {{ album.title }}
+      </h3>
+      <nuxt-link :to="`/albums/${album.id}`" class="button is-primary">Ver Albúm</nuxt-link>
+      <!-- <a class="button is-primary" href="#">Ver album</a> -->
+    </div>
   </div>
 </template>
 
@@ -23,7 +24,7 @@ export default {
 .box {
   padding: 1em;
 }
-h3{
+h3 {
   min-height: 5em;
 }
 </style>
