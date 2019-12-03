@@ -2,7 +2,7 @@
   <div class="container">
     <h1 class="title">Albums de la página</h1>
     <div class="columns is-multiline">
-      <AlbumCard :album="album" v-for="album in albums" :key="album.title" />
+      <AlbumCard v-for="album in albums" :key="album.title" :album="album" />
     </div>
   </div>
 </template>
@@ -29,5 +29,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

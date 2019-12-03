@@ -1,18 +1,23 @@
 <template lang="html">
   <div class="container">
-  <header>
-    <nuxt-link to="/">REGRESAR</nuxt-link>
-  </header>
-    <h1 class="title">{{album.title}}</h1>
+    <header>
+      <nuxt-link to="/">REGRESAR</nuxt-link>
+    </header>
+    <h1 class="title">{{ album.title }}</h1>
     <div class="columns is-multiline">
-      <div class="column is-one-quarter" v-for="photo in photos" :key="photo.id">
-          <img :src="photo.url" :alt="photo.id"></img>
+      <div
+        v-for="photo in photos"
+        :key="photo.id"
+        class="column is-one-quarter"
+      >
+        <img :src="photo.url" :alt="photo.id" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
+// eslint-disable-next-line no-unused-vars
 import router from "vue-router";
 import axios from "axios";
 import env from "../../config/env";
